@@ -1,0 +1,92 @@
+.dayLabel {
+  font-size: 40px;
+  position: relative;
+  font-family: revert;
+  font-weight: bold;
+  color: mediumblue;
+  text-shadow: 0px 0px 1px black;
+  top: 28px;
+  cursor: pointer;
+}
+
+.currentDayLabel {
+  color: rgb(255, 0, 0);
+}
+
+.dayDiv {
+  /* основной стиль */
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  text-align: center;
+  background-color: burlywood;
+  border: 1px solid black;
+  margin: 5px 5px 0px 0px;
+  box-shadow: 1px 1px 1px 0px black;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.dayDiv:hover {
+  background-color: rgb(221, 164, 90);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.weekendDay {
+  /* стиль выходного дня */
+  background-color: rgb(250, 61, 61);
+}
+
+.weekendDay:hover {
+  background-color: rgb(202, 50, 50);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.currentDay {
+  /* стиль текущего дня */
+  background-color: rgb(252, 250, 143);
+}
+
+.currentDay:hover {
+  background-color: rgb(255, 251, 2);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.currentNoteDay {
+  /* стиль текущего дня с заметкой */
+  animation: anime 1s ease-out infinite;
+}
+
+@keyframes anime {
+  0% {
+    background-color: rgb(252, 250, 143);
+  }
+
+  50% {
+    background-color: rgb(42, 243, 58);
+  }
+
+  100% {
+    background-color: rgb(252, 250, 143);
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.noteDay {
+  /* стиль дня с заметкой */
+  background-color: rgb(42, 243, 58);
+}
+
+.noteDay:hover {
+  background-color: rgb(35, 204, 50);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+::ng-deep .toolTip {
+  font-size: 20px;
+  max-width: 400px;
+  background-color: crimson;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -1,0 +1,64 @@
+.modal {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 620px;
+  padding: 20px;
+  background-color: darkseagreen;
+  border-radius: 10px;
+  border: 2px solid rgb(14, 78, 11);
+  box-shadow: 0px 0px 11px 0px black;
+  text-align: center;
+}
+
+.form-field {
+  width: 100%;
+  font-size: 26px;
+}
+
+textarea {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+textarea.mat-input-element {
+  resize: none;
+}
+
+.err_note {
+  animation: error 2s ease-out;
+}
+
+@keyframes error {
+  0% {
+    background-color: initial;
+  }
+
+  25% {
+    background-color: rgb(253, 109, 109);
+  }
+
+  50% {
+    background-color: initial;
+  }
+
+  75% {
+    background-color: rgb(253, 109, 109);
+  }
+
+  100% {
+    background-color: initial;
+  }
+}
+
+.btn {
+  position: absolute;
+  width: 94%;
+  bottom: 30px;
+}
+
+button {
+  margin: 10px 20px;
+}

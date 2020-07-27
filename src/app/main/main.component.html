@@ -1,0 +1,22 @@
+<div class="main">
+  <div class="header">
+    <!-- шапка календаря -->
+    <div class="leftBtnDiv" (click)="prevMonth()"></div>
+    <div class="infoDiv">
+      <label class="infoLabel">{{infoDate}}</label>
+    </div>
+    <div class="rightBtndiv" (click)="nextMonth()"></div>
+  </div>
+
+  <div class="daysDiv" (click)="clickDay($event)">
+    <app-day *ngFor="let i of array" [dataDay]="i"></app-day>
+  </div>
+
+</div>
+
+<app-modal-window *ngIf="modalWindow"></app-modal-window>
+
+<div class="progress" *ngIf="progressBar">
+  <label>Загрузка календаря...</label>
+  <mat-progress-bar mode="buffer" [value]="progress"></mat-progress-bar>
+</div>

@@ -1,0 +1,80 @@
+.main {
+  width: 500px;
+  margin: 100px auto;
+  background-color: cadetblue;
+  border-radius: 10px;
+  border: 2px solid lightskyblue;
+  box-shadow: 0px 0px 11px 0px black;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  height: 65px;
+  padding: 5px 0px;
+  border-bottom: 2px solid rgb(135 206 250);
+}
+
+.leftBtnDiv {
+  background-image: url('../../assets/left.png');
+  background-size: contain;
+  margin-left: 2px;
+  width: 90px;
+  height: 100%;
+  opacity: 70%;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.leftBtnDiv:hover {
+  opacity: 100%;
+}
+
+.rightBtndiv {
+  background-image: url('../../assets/right.png');
+  background-size: contain;
+  width: 90px;
+  height: 100%;
+  opacity: 70%;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.rightBtndiv:hover {
+  opacity: 100%;
+}
+
+.infoDiv {
+  width: 100%;
+  text-align: center;
+}
+
+.infoLabel {
+  position: relative;
+  top: 20px;
+  font-size: xxx-large;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.daysDiv {
+  margin: 1px 0px 6px 6px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.progress {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.mat-progress-bar {
+  display: block;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: opacity 250ms linear;
+  width: 100%;
+  margin-top: 1rem;
+}

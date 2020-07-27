@@ -1,0 +1,17 @@
+<div class="modal">
+  <mat-form-field class="form-field">
+    <mat-label>Заметки</mat-label>
+    <textarea 
+    [ngClass]="{err_note: errorNote}"
+    #m_ta
+    matInput 
+    placeholder="Заметка не должна быть пустой" 
+    [(ngModel)]="text"
+    ></textarea>
+  </mat-form-field>
+  <div class="btn">
+    <button mat-stroked-button color="primary" matTooltip="Удалить текущую заметку" (click)="delete()">Удалить</button>
+    <button mat-stroked-button color="primary" matTooltip="Отменить действие"  (click)="cansel()">Отмена</button>
+    <button mat-stroked-button color="primary" matTooltip="Сохранить заметку"  (click)="apply()">Принять</button>
+  </div>
+</div>

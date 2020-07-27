@@ -1,0 +1,13 @@
+<div [ngClass]="dataDay.style"
+[matTooltipDisabled]="!dataDay.toolTip.status"
+[matTooltip]="dataDay.toolTip.text"
+matTooltipClass="toolTip"
+[matTooltipPosition]="'above'"
+>
+  <label
+  [ngClass]="{
+    dayLabel: true,
+    currentDayLabel: dataDay.style.currentDay
+  }"
+  >{{dataDay.numberDay + 1}}</label>
+</div>
